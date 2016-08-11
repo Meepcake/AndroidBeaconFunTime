@@ -1,7 +1,24 @@
 <resources>
-    <string name="app_name">AndroidBeaconFunTime</string>
+    <string name="app_name">Android Beacon Fun Time</string>
     <string name="action_settings">Settings</string>
     <string name="action_mystery">Mystery</string>
-    <string name="section_format">Hello World from section: %1$d</string>
-    <string name="section_format2">WEOEOEOEOEOEOEOEOEOE</string>
+    <string name="UUID">12345678-1234-5678-1234-567812345678</string>
+    <string name="Multiple_Ads_Not_Supported">Multiple advertisement not supported</string>
+    <string name="Off_Load_Filtering_Not_Supported">Off loaded filtering not supported</string>
+    <string name="Off_Load_Scan_Batching_Not_Supported">Off loaded scan batching not supported</string>
+    <string name="System_Does_Not_Meet_Requirements">System Does Not Meet Requirements</string>
+    <string name="All_Requirements_Met">All Requirements Met!</string>
+    <string name="Scan_Started">Scan Started...</string>
+    <string name="Building_Scan_Filter">Building Scan Filter..</string>
+    <string name="Building_Scan_Settings">Building Scan Settings..</string>
+    <string name="Beacon_Detected">Beacon Detected!</string>
+    <string name="Beacon_Lost">Beacon Lost!</string>
+    <string name="challengerpicture">ChallengerPicture</string>
+    <string name="lock">lock</string>
+    <string name="unlock">unlock</string>
+    <string name="remotestop">remoteStop</string>
+    <string name="remotestart">remoteStart</string>
+    <string name="scan_for_devices">Scan for Devices</string>
+    <string name="Scan_Stopped">Scan Stopped</string>
+
 </resources>
