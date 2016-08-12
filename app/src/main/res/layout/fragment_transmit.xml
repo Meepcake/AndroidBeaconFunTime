@@ -1,0 +1,145 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:id="@+id/scrollView"
+    android:layout_weight="0.44">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Beacon Name"
+            android:id="@+id/name_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_Name"
+            android:layout_below="@+id/uuid_text"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:text="unknown" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="UUID"
+            android:id="@+id/uuid_text"
+            android:layout_alignParentTop="true"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_UUID"
+            android:layout_below="@+id/uuid_text"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentEnd="true"
+            android:text="33407802-5fd4-11e6-8b77-86f30ca893d3" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Major"
+            android:id="@+id/major_text"
+            android:layout_below="@+id/text_UUID"
+            android:layout_alignEnd="@+id/uuid_text" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_Major"
+            android:text="0"
+            android:layout_below="@+id/major_text"
+            android:layout_centerHorizontal="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Minor"
+            android:id="@+id/minor_text"
+            android:layout_below="@+id/text_Major"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_Minor"
+            android:text="0"
+            android:layout_above="@+id/text_TxValue"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Tx Value"
+            android:id="@+id/txValue_Text"
+            android:layout_below="@+id/minor_text"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_TxValue"
+            android:text="-69"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Manufacturer ID"
+            android:id="@+id/manufacturer_Text"
+            android:layout_below="@+id/minor_text"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_ManufacturerID"
+            android:text="65535"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceMedium"
+            android:text="Manufacturer Reserved"
+            android:id="@+id/manufacturerRes_Text"
+            android:layout_below="@+id/minor_text"
+            android:layout_centerHorizontal="true" />
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/text_ManufacturerRes"
+            android:text="0"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:layout_gravity="center_horizontal" />
+
+        <Button
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Start Broadcast"
+            android:id="@+id/btn_StartBroadcast"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:layout_gravity="center_horizontal" />
+    </LinearLayout>
+</ScrollView>

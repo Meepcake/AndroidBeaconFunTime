@@ -505,13 +505,14 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer{
     @Override
     public void onBeaconServiceConnect() {
         beaconManager.setMonitorNotifier(new MonitorNotifier() {
+
             @Override
             public void didEnterRegion(Region region) {
                 Log.e(TAG, "I just saw an beacon for the first time!");
                 ToastUtils.showToastInUiThread(getApplication(),R.string.Beacon_Detected);
 
                 try{
-                    beaconManager.startRangingBeaconsInRegion(new Region(getResources().getString(R.string.UUID), null, null, null));
+                    beaconManager.startRangingBeaconsInRegion(new Region(null, null, null, null));
                     beaconManager.setRangeNotifier(new RangeNotifier() {
                         @Override
                         public void didRangeBeaconsInRegion(Collection<Beacon> beacons, Region region) {
@@ -533,7 +534,7 @@ public class MainActivity extends AppCompatActivity implements BeaconConsumer{
 
             @Override
             public void didDetermineStateForRegion(int state, Region region) {
-                Log.e(TAG, "I have just switched from seeing/not seeing beacons: "+state);
+                Log.e(TAG, "I have just switched from seeing/not seeing beacons: " + state);
             }
         });
 
