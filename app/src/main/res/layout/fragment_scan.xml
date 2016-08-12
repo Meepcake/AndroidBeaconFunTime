@@ -1,0 +1,19 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="match_parent"
+    android:gravity="top|center">
+
+
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="439dp"
+        android:id="@+id/listView" />
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Start Scan"
+        android:id="@+id/btn_ScanStart"
+        android:layout_marginTop="10dp" />
+</LinearLayout>
